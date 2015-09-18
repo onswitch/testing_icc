@@ -1,0 +1,28 @@
+# Documentation: https://github.com/roots/trellis#wordpress-sites
+wordpress_sites:
+  example.com:
+    site_hosts:
+      - discoveripswich-dev.com
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:roots/bedrock.git
+    site_install: true
+    site_title: Discover Ipswich Development
+    admin_user: admin
+    admin_password: admin
+    admin_email: admin@discoveripswich-dev.com
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: false
+    cache:
+      enabled: false
+      duration: 30s
+    system_cron: true
+    env:
+      wp_home: http://discoveripswich-dev.com
+      wp_siteurl: http://discoveripswich-dev.com/wp
+      wp_env: development
+      db_name: d2_dev
+      db_user: d2_dbuser
+      db_password: d2_dbpassword
