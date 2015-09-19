@@ -42,3 +42,15 @@ function icc_load_google_fonts() {
 }
 add_action('wp_head', __NAMESPACE__ . '\\icc_load_google_fonts');
 
+/**
+ * Load extra module files
+ */
+$module_includes = [
+  '/modules/homepage-image.php',                 // Homepage Image Widget
+    '/modules/homepage-featured.php'                 // Homepage Featured Widget
+];
+
+foreach ($module_includes as $file) {
+	require_once dirname(__file__) . $file;
+}
+unset($file, $filepath);
