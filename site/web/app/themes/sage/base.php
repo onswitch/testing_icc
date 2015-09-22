@@ -15,39 +15,23 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <div id="container">
-    <?php
-      do_action('get_header');
-      get_template_part('templates/header');
-    ?>
-    <div class="page-wrapper">
-		<div class="inner">
-        	<main id="main" style="min-height: 800px">
-        		<?php include Wrapper\template_path(); ?>
-        	</div><!-- /.content -->
-        </div><!-- /.wrap -->
-    </div><!-- /.wrap -->
+    	<?php
+      		do_action('get_header');
+      		get_template_part('templates/header');
+    	?>
+    	
+    	<div class="page-wrapper">
+			<div class="inner">
+        		<main id="main" style="min-height: 800px">
+        			<?php include Wrapper\template_path(); ?>
+        		</main>
+        	</div>
+    	</div>
     
-    <?php
-    /*
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
-    */
-    ?>
-    
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-    ?>
+    	<?php
+      		do_action('get_footer');
+      		get_template_part('templates/footer');
+    	?>
     </div>
     <script src="/app/themes/sage/assets/scripts/theme/cdn.js" type="text/javascript"></script>
     <script src="/app/themes/sage/assets/scripts/theme/dep.js" type="text/javascript"></script>

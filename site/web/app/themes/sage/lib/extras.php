@@ -46,8 +46,11 @@ add_action('wp_head', __NAMESPACE__ . '\\icc_load_google_fonts');
  * Load extra module files
  */
 $module_includes = [
-  '/modules/homepage-image.php',                 // Homepage Image Widget
-    '/modules/homepage-featured.php'                 // Homepage Featured Widget
+	'/modules/homepage-image.php',			// Homepage Image Widget
+	'/modules/homepage-featured.php',		// Homepage Featured Widget
+	'/modules/featured-story.php',			// Featured Story Widget	
+	'/modules/ipswich-map.php',				// Ipswich Map Widget
+	'/modules/newsletter-signup.php'		// Newsletter Signup Widget
 ];
 
 foreach ($module_includes as $file) {

@@ -1,16 +1,16 @@
 <?php
 namespace Discover\Widgets;
 
-class HP_Image extends \WP_Widget {
+class DI_Featured_Story extends \WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
-			'di_hero_widget', // Base ID
-			__( 'Hero Image', 'sage' ), // Name
-			array( 'description' => __( 'Add a hero image with limks', 'sage' ) ) // Args
+			'di_featured_story_widget', // Base ID
+			__( 'Featured Story', 'sage' ), // Name
+			array( 'description' => __( 'Use a hero image to tell a story', 'sage' ) ) // Args
 		);
 		
 		add_action('admin_enqueue_scripts', array($this, 'upload_scripts'));
@@ -25,70 +25,24 @@ class HP_Image extends \WP_Widget {
 	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
-		/*
-		echo $args['before_widget'];
-		if ( ! empty( $instance['title'] ) ) {
-			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
-		}
-		echo __( 'Hero Image', 'text_domain' );
-		echo $args['after_widget'];
-		*/
 		
 		?>
-            <section>
-            	<div style="background-image: url(<?=$instance['di_image'];?>)" class="story-intro home-banner <?=$instance['di_colour'];?> text-center">
-                	<div style="background-image: url(<?=$instance['di_image'];?>);background-size: cover;" class="story">
-                  		<div class="container">
-                    		<div class="row">
-                      			<div class="col-xs-12">
-									<div class="title"><?=$instance['di_title'];?></div>
-									<div class="separator"></div>
-									<div class="description"><?=$instance['di_message'];?></div>
-									<div class="meta"><?=__('Photo');?>&#58; <?=$instance['di_photoby'];?></div>
-                      			</div>
-                    		</div>
-                  		</div>
-                	</div>
-					<div style="background-image: url(<?= get_template_directory_uri(); ?>/dist/images/feature-bg.png);background-size: cover;" class="features">
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="See &amp; Do">
-										<div class="bubble">
-											<div class="icon-feature icon-feature-see-do"></div>
-										</div>
-										<span>See & Do</span>
-									</a>
-								</div>
-								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="What's On">
-										<div class="bubble">
-											<div class="icon-feature icon-feature-what-on"></div>
-										</div>
-										<span>What's On</span>
-									</a>
-								</div>
-								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="Stay">
-										<div class="bubble">
-											<div class="icon-feature icon-feature-stay"></div>
-										</div>
-										<span>Stay</span>
-									</a>
-								</div>
-							</div>
+		<section class="hidden-xs hidden-sm">
+			<div style="background-image: url(<?=$instance['di_image'];?>)" class="story-intro bottom-bar <?=$instance['di_colour'];?> text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="title"><?=$instance['di_title'];?></div>
+							<div class="separator"></div>
+							<div class="description"><?=$instance['di_message'];?></div>
+							<div class="meta"><?=__('Photo');?>&#58; <?=$instance['di_photoby'];?></div><a href="<?=$instance['di_link'];?>" title="Read More" class="readmore">Read More</a>
 						</div>
 					</div>
-            	</div>
-            </section>
-            <div class="colorful-bar">
-            	<span class="sp-1"></span>
-            	<span class="sp-2"></span>
-            	<span class="sp-3"></span>
-            	<span class="sp-4"></span>
-            	<span class="sp-5"></span>
-            </div>
+				</div>
+			</div>
+		</section>
 		<?php
+
 	}
 
     /**
@@ -123,12 +77,17 @@ class HP_Image extends \WP_Widget {
             $di_photoby = $instance['di_photoby'];
         }
 
-        $di_colour = 'orange';
+        $di_link = '';
+        if(isset($instance['di_link']))
+        {
+            $di_link = $instance['di_link'];
+        }        
+        
+        $di_colour = 'purple';
         if(isset($instance['di_colour']))
         {
-            $di_link = $instance['di_colour'];
+            $di_colour = $instance['di_colour'];
         } 
-        
         ?>
         <p>
             <label for="<?php echo $this->get_field_name( 'di_title' ); ?>"><?php _e( 'Title:' ); ?></label>
@@ -137,6 +96,10 @@ class HP_Image extends \WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_name( 'di_message' ); ?>"><?php _e( 'Message:' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'di_message' ); ?>" name="<?php echo $this->get_field_name( 'di_message' ); ?>" type="text" value="<?php echo esc_attr( $di_message ); ?>" />
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_name( 'di_link' ); ?>"><?php _e( 'Link:' ); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'di_link' ); ?>" name="<?php echo $this->get_field_name( 'di_link' ); ?>" type="text" value="<?php echo esc_attr( $di_link ); ?>" />
         </p>
         <p>
             <label for="<?php echo $this->get_field_name( 'di_colour' ); ?>"><?php _e( 'Colour:' ); ?></label>
@@ -183,7 +146,7 @@ class HP_Image extends \WP_Widget {
 }
 
 add_action( 'widgets_init', function() {
-     register_widget('\Discover\Widgets\HP_Image');
+     register_widget('\Discover\Widgets\DI_Featured_Story');
 });
 
 ?>
