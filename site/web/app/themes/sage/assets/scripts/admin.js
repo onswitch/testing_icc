@@ -37,7 +37,7 @@
 				var imgurl = jQuery('img',html).attr('src');
 				var inputText = jQuery.data(document.body, 'prevElement');
 
-				if(inputText != undefined && inputText != '')
+				if(inputText !== undefined && inputText !== '')
 				{
 					inputText.val(imgurl);
 				}

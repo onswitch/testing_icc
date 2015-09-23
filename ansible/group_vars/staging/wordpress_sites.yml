@@ -10,6 +10,9 @@ wordpress_sites:
     multisite:
       enabled: false
       subdomains: false
+    htpasswd:
+        name: discover
+        password: thehiddensecret
     ssl:
       enabled: false
     cache:
