@@ -28,7 +28,7 @@ class HP_Featured extends \WP_Widget {
 <div class="section article-listing grid-mode home-grid" style="position: relative; height: 1048px;">
               <div class="grid-sizer"></div>
               <article data-grid-order="1" class="grid-item grid-item--width2 grid-item--height2 col-xs-12 col-md-4" style="position: absolute; left: 0%; top: 0px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Rich in history"><img src="images/article/article-1-thumb.jpg" alt="media 1" class="" style="position: absolute; width: auto; height: 524px; top: 0px; left: -91.5px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Rich in history"><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-1-thumb.jpg" alt="media 1" class="" style="position: absolute; width: auto; height: 524px; top: 0px; left: -91.5px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 
@@ -42,7 +42,7 @@ class HP_Featured extends \WP_Widget {
                 <div class="bottom-bar"></div>
               </article>
               <article data-grid-order="2" class="grid-item col-xs-12 col-md-4" style="position: absolute; left: 66.6153%; top: 0px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="SEQ’s Wine Region"><img src="images/article/article-2-thumb.jpg" alt="media 2" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="SEQ’s Wine Region"><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-2-thumb.jpg" alt="media 2" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 
@@ -56,7 +56,7 @@ class HP_Featured extends \WP_Widget {
                 <div class="bottom-bar"></div>
               </article>
               <article data-grid-order="3" class="grid-item col-xs-12 col-md-4" style="position: absolute; left: 66.6153%; top: 262px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="5 Magical Day Trips"><img src="images/article/article-3-thumb.jpg" alt="media 3" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="5 Magical Day Trips"><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-3-thumb.jpg" alt="media 3" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 
@@ -70,7 +70,7 @@ class HP_Featured extends \WP_Widget {
                 <div class="bottom-bar"></div>
               </article>
               <article data-grid-order="4" class="grid-item col-xs-12 col-md-4" style="position: absolute; left: 0%; top: 524px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Scenic Drives"><img src="images/article/article-4-thumb.jpg" alt="media 4" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Scenic Drives"><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-4-thumb.jpg" alt="media 4" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 
@@ -84,7 +84,7 @@ class HP_Featured extends \WP_Widget {
                 <div class="bottom-bar"></div>
               </article>
               <article data-grid-order="6" class="grid-item col-xs-12 col-md-4" style="position: absolute; left: 0%; top: 786px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="3 Best Family Outings"><img src="images/article/article-5-thumb.jpg" alt="media 5" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="3 Best Family Outings"><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-5-thumb.jpg" alt="media 5" class="" style="position: absolute; width: auto; height: 262px; top: 0px; left: -41px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 
@@ -98,7 +98,7 @@ class HP_Featured extends \WP_Widget {
                 <div class="bottom-bar"></div>
               </article>
               <article data-grid-order="5" class="grid-item grid-item--width2 grid-item--height2 col-xs-12 col-md-4" style="position: absolute; left: 33.3076%; top: 524px;">
-                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Willowbank - QLD’s Premier Raceway "><img src="images/article/article-6-thumb.jpg" alt="media 6" class="" style="position: absolute; width: auto; height: 524px; top: 0px; left: -91.5px;"></a></div>
+                <div class="media" style="overflow: hidden; position: absolute;"><a href="#" title="Willowbank - QLD’s Premier Raceway "><img src="<?= get_template_directory_uri(); ?>/dist/images/article/article-6-thumb.jpg" alt="media 6" class="" style="position: absolute; width: auto; height: 524px; top: 0px; left: -91.5px;"></a></div>
                 <div class="overlay-info">
                   <div class="interact">
                     <button> 

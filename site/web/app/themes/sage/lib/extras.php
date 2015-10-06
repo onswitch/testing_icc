@@ -42,6 +42,26 @@ function icc_load_google_fonts() {
 }
 add_action('wp_head', __NAMESPACE__ . '\\icc_load_google_fonts');
 
+// Add specific CSS class by filter
+add_filter( 'body_class', __NAMESPACE__ . '\\add_product_class_names' );
+function add_product_class_names( $classes ) {
+	
+	// add 'class-name' to the $classes array
+	$posttype = get_post_type(get_post());
+	switch($posttype) {
+		case 'accommodation':
+		case 'attraction':
+			$classes[] = $posttype;
+			$classes[] = 'detail';
+			break;
+		default:
+			break;
+	}
+	
+	// return the $classes array
+	return $classes;
+}
+
 /**
  * Load extra module files
  */
