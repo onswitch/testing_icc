@@ -7922,7 +7922,10 @@ body:after {
 @font-face {
   font-family: 'Georgia';
   src: url('../fonts/Georgia.eot');
+  src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia.woff') format('woff'), url('../fonts/Georgia.ttf') format('truetype'), url('../fonts/Georgia.svg#source_sans_prolight') format('svg');  
+  /*
   src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia.woff2') format('woff2'), url('../fonts/Georgia.woff') format('woff'), url('../fonts/Georgia.ttf') format('truetype'), url('../fonts/Georgia.svg#source_sans_prolight') format('svg');
+  */
   font-weight: normal;
   font-style: normal; }
 

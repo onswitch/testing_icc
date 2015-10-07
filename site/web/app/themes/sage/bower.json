@@ -7,13 +7,22 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "bootstrap-sass": "3.3.5",
+    "flexslider": "~2.5.0",
     "modernizr": "2.8.2",
-    "bootstrap-sass": "3.3.5"
+    "font-awesome": "fontawesome#~4.4.0"
   },
   "overrides": {
     "modernizr": {
       "main": "./modernizr.js"
     },
+    "flexslider": {
+      "main": [
+    	"jquery.flexslider.js",
+    	"flexslider.css",
+    	"./fonts/*"
+      ]
+    },  
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
