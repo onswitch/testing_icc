@@ -16,6 +16,8 @@ $mailto = preg_replace_callback( '/([\x80-\xff])/',
     },
     $email );
 $website = \Roots\Sage\Extras\addhttp(get_post_meta(get_the_ID(), 'wpcf-website', true));
+$tripadvisorid = get_post_meta(get_the_ID(), 'wpcf-tripadvisor-id', true);
+$facebook = get_post_meta(get_the_ID(), 'wpcf-facebook', true);
 $images = get_posts( array(
 	'post_type' => 'attachment',
 	'posts_per_page' => -1,
@@ -38,7 +40,7 @@ $images = get_posts( array(
 							<div class="col-xs-4 col-sm-4 col-md-2 text-center field"><a href="<?=$website;?>" target="_blank"><span class="big fa fa-external-link"></span><span class="small">View Website</span></a></div>
                     	<?php elseif( ($price == false) AND (strlen($telephone) < 5) ) : ?>
 							<div class="col-xs-6 col-sm-6 col-md-6 text-center field"><span class="big fa fa-map-marker"></span><span class="small">View Map</span></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 text-center field" style="border-right: none !important;"><a href="<?=$website;?>" target="_blank"><span class="big fa fa-external-link"></span><span class="small">View Website</span></a></div>                    	
+							<div class="col-xs-6 col-sm-6 col-md-6 text-center field" style="border-right: none !important;"><a href="<?=$website;?>" target="_blank"><span class="big fa fa-external-link"></span><span class="small">View Website</span></a></div>
                     	<?php elseif($price != false) : ?>
 							<div class="col-xs-3 col-sm-3 col-md-3 text-center field"><a href="tel:<?=$telephone_link;?>"><span class="big fa fa-phone"></span><span class="small"><?=$telephone;?></span></a></div>
 							<div class="col-xs-3 col-sm-3 col-md-3 text-center field"><span class="big"><?=$price;?></span><span class="small">Entry</span></div>
@@ -133,22 +135,38 @@ margin-left: -30% !important;
                       <?php endif; ?>
                       <p><label>Email</label><a href="mailto:<?=$mailto;?>"><span><?=$email;?></span></a></p>
                     </div>
-                    <div class="testimonial text-center"><img src="<?= get_template_directory_uri(); ?>/dist/images/icons/icon-owl.png" width="50%">
-                      <div class="title">Testimonial</div>
-                      <div class="separator"></div>
-                      <div class="ideal-location">“Ideal Location”</div>
-                      <div class="description">Cessimusciis por as et et vollat fugia voluptiscit, omnisqui to molo consequ istessimus duntiis tiorum,</div>
+                    <?php if($tripadvisorid > 0) : ?>
+                    <div class="testimonial text-center">
+      
+<style>
+#CDSWIDSSP .widSSPData {
+	background-color: #f8f8f8;
+}
+#CDSWIDSSP img { 
+	background-color: transparent !important; 
+}
+#CDSWIDSSP dt img { 
+	content:url("<?= get_template_directory_uri(); ?>/dist/images/icons/icon-owl.png") !important; 
+}
+#CDSWIDSSP .widSSPData .widSSPBranding dt { height: 50px !important; }
+
+</style>              
+<div id="TA_selfserveprop709" class="TA_selfserveprop">
+	<ul id="NCb80gqgbm" class="TA_links sB5FvMJs">
+		<li id="0rsaqdyUZ9O" class="C535Y2z">
+			<a target="_blank" href="http://www.tripadvisor.com.au/"><img src="http://www.tripadvisor.com.au/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+		</li>
+	</ul>
+</div>
+<script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=709&amp;locationId=<?=$tripadvisorid;?>&amp;lang=en_AU&amp;rating=true&amp;nreviews=0&amp;writereviewlink=false&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
                     </div>
-                    <div class="ranked text-center">
-                      <div class="title">Ranked #2 of 6</div>
-                      <div class="separator"></div>
-                      <div class="description">in Ipswich area</div>
+                    <?php endif; ?>
+                    <?php if($facebook != '') : ?>
+                    <div class="testimonial text-center">
+                    	<div class="fb-like-box" data-href="<?=$facebook;?>" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
                     </div>
-                    <div class="rating text-center">
-                      <div class="title">Rating</div>
-                      <div class="rate-view"><span class="rate"></span><span class="rate"></span><span class="rate"></span><span class="rate"></span><span class="unrate"></span></div>
-                      <div class="description">Courtesy of Trip Advisor</div>
-                    </div>
+                    <?php endif; ?>
+                    <div class="testimonial text-center"></div>
                   </div>
                 </div>
               </div>

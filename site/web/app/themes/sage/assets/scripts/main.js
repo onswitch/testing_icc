@@ -33,7 +33,7 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
       }
-    }
+    }  
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
