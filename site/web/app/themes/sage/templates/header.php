@@ -21,7 +21,101 @@
             </div>
             <div class="navigation">
               <ul>
-                <li class="active"><a href="#" title="See, Do &amp; Stay">See, Do & Stay</a>
+                <li class="active"><a href="<?=site_url('whats-on');?>" title="What&rsquo;s On">What&rsquo;s On</a>
+                <!--
+                	<div class="sub-level mega-menu type-1">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="<?=site_url('see-and-do');?>" title="See &amp; Do" class="title">See & Do</a>
+                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="<?=site_url('whats-on');?>" title="What's On" class="title">What's On</a>
+                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="<?=site_url('stay');?>" title="Stay" class="title">Stay</a>
+                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                -->
+                </li>
+                <li><a href="<?=site_url('see-and-do');?>" title="See and Do">See &amp; Do</a>
+                <!-- 
+                	<div class="sub-level mega-menu type-1">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="See &amp; Do" class="title">See & Do</a>
+                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="What's On" class="title">What's On</a>
+                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="Stay" class="title">Stay</a>
+                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                -->
+                </li>
+                <li><a href="<?=site_url('stay');?>" title="Find Accommodation">Stay</a>
+                <!--
+                	<div class="sub-level mega-menu type-1">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="See &amp; Do" class="title">See & Do</a>
+                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="What's On" class="title">What's On</a>
+                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 sep">
+                        <div class="sub-wrap"><a href="#" title="Stay" class="title">Stay</a>
+                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                -->  
+                </li>
+                <li><a href="<?=site_url('dining');?>" title="Resturants in Ipswich">Eat</a>
+                <!-- 
                   <div class="sub-level mega-menu type-1">
                     <div class="row">
                       <div class="col-xs-12 col-md-4 sep">
@@ -49,95 +143,9 @@
                       </div>
                     </div>
                   </div>
+                -->  
                 </li>
-                <li><a href="#" title="Themes">Themes</a>
-                  <div class="sub-level mega-menu type-1">
-                    <div class="row">
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="See &amp; Do" class="title">See & Do</a>
-                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="What's On" class="title">What's On</a>
-                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="Stay" class="title">Stay</a>
-                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="#" title="About">About</a>
-                  <div class="sub-level mega-menu type-1">
-                    <div class="row">
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="See &amp; Do" class="title">See & Do</a>
-                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="What's On" class="title">What's On</a>
-                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="Stay" class="title">Stay</a>
-                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="#" title="History">History</a>
-                  <div class="sub-level mega-menu type-1">
-                    <div class="row">
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="See &amp; Do" class="title">See & Do</a>
-                          <div class="sub-links"><a href="#" title="Farming, Food &amp; Produce">Farming, Food & Produce</a><a href="#" title="Scenic Drives &amp; Walks">Scenic Drives & Walks</a><a href="#" title="Towns">Towns</a><a href="#" title="Entertainment">Entertainment</a><a href="#" title="Wineries, Vineyards &amp; Breweries">Wineries, Vineyards & Breweries</a><a href="#" title="Historical Sites &amp; Heritage Locations">Historical Sites & Heritage Locations</a><a href="#" title="View All Things to See &amp; Do" class="visible-md visible-lg view-all">View All Things to See & Do</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="What's On" class="title">What's On</a>
-                          <div class="sub-links"><a href="#" title="Exhibitions &amp; Shows">Exhibitions & Shows</a><a href="#" title="Sporting Events">Sporting Events</a><a href="#" title="Festivals &amp; Celebrations">Festivals & Celebrations</a><a href="#" title="Theatre, Shows &amp; Performances">Theatre, Shows & Performances</a><a href="#" title="Workshops">Workshops</a><a href="#" title="View All Events" class="visible-md visible-lg view-all">View All Events</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 sep">
-                        <div class="sub-wrap"><a href="#" title="Stay" class="title">Stay</a>
-                          <div class="sub-links"><a href="#" title="Bed &amp; Breakfast">Bed & Breakfast</a><a href="#" title="Cabins &amp; Cottages">Cabins & Cottages</a><a href="#" title="Caravan &amp; Camping">Caravan & Camping</a><a href="#" title="Farmstays">Farmstays</a><a href="#" title="Hotels &amp; Motels">Hotels & Motels</a><a href="#" title="View All Accomodation" class="visible-md visible-lg view-all">View All Accomodation</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="info"><span class="info-text"> Visit our Information Centre for more information on things to Do, See, and Places to Stay.</span><span class="break">| </span><span class="map-view">View Map.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="#" title="Seasons">Seasons</a>
+                <li><a href="#" title="About Ipswich">About</a>
                   <div class="sub-level mega-menu type-1">
                     <div class="row">
                       <div class="col-xs-12 col-md-4 sep">

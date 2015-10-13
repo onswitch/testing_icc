@@ -47,14 +47,15 @@ add_filter( 'body_class', __NAMESPACE__ . '\\add_product_class_names' );
 function add_product_class_names( $classes ) {
 	
 	// add 'class-name' to the $classes array
-	$posttype = get_post_type(get_post());
+	$posttype = get_post_type(get_post());	
 	switch($posttype) {
-		case 'accommodation':
-		case 'attraction':
-			$classes[] = $posttype;
-			$classes[] = 'detail';
+		case 'page':
+			break;
+		case 'post':
 			break;
 		default:
+			$classes[] = $posttype;
+			$classes[] = 'detail';
 			break;
 	}
 	

@@ -31,7 +31,7 @@ $images = get_posts( array(
     		<div class="container">
             	<div class="meta-data">
                 	<div class="row">
-                		<?php if($posttype == 'event') : ?>
+                		<?php if($posttype == 'events') : ?>
 							<div class="col-xs-4 col-sm-4 col-md-2 text-center field"><span class="big">27</span><span class="small">June</span></div>
 							<div class="col-xs-4 col-sm-4 col-md-2 text-center field"><span class="big">1</span><span class="small">Day</span></div>
 							<div class="col-xs-4 col-sm-4 col-md-2 text-center field"><a href="tel:<?=$telephone_link;?>"><span class="big fa fa-phone"></span><span class="small"><?=$telephone;?></span></a></div>

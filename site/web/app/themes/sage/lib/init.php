@@ -28,6 +28,10 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
+  // Add thumbnail sizes
+  add_image_size('front-page-sticky', 1048, 524, true);
+  add_image_size('front-page-side', 514, 262, true);
+
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);

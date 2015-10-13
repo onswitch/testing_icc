@@ -10,7 +10,10 @@
     "bootstrap-sass": "3.3.5",
     "flexslider": "~2.5.0",
     "modernizr": "2.8.2",
-    "font-awesome": "fontawesome#~4.4.0"
+    "font-awesome": "fontawesome#~4.4.0",
+    "masonry": "~3.3.2",
+    "isotope": "~2.2.2",
+    "imagefill": "*"
   },
   "overrides": {
     "modernizr": {
@@ -18,11 +21,11 @@
     },
     "flexslider": {
       "main": [
-    	"jquery.flexslider.js",
-    	"flexslider.css",
-    	"./fonts/*"
+        "jquery.flexslider.js",
+        "flexslider.css",
+        "./fonts/*"
       ]
-    },  
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",

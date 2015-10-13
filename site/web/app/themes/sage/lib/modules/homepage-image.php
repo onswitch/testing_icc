@@ -53,7 +53,7 @@ class HP_Image extends \WP_Widget {
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="See &amp; Do">
+									<a href="<?=site_url('see-and-do');?>" title="See &amp; Do">
 										<div class="bubble">
 											<div class="icon-feature icon-feature-see-do"></div>
 										</div>
@@ -61,7 +61,7 @@ class HP_Image extends \WP_Widget {
 									</a>
 								</div>
 								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="What's On">
+									<a href="<?=site_url('whats-on');?>" title="What's On">
 										<div class="bubble">
 											<div class="icon-feature icon-feature-what-on"></div>
 										</div>
@@ -69,7 +69,7 @@ class HP_Image extends \WP_Widget {
 									</a>
 								</div>
 								<div class="col-xs-12 col-md-4 text-center">
-									<a href="#" title="Stay">
+									<a href="<?=site_url('stay');?>" title="Stay">
 										<div class="bubble">
 											<div class="icon-feature icon-feature-stay"></div>
 										</div>

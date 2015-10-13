@@ -74,7 +74,7 @@
         	<span class="visible-md-inline-block visible-lg-inline-block">&nbsp;|&nbsp;</span>
         	<span>14 Queen Victoria Parade, Ipswich </span>
         	<span class="visible-md-inline-block visible-lg-inline-block">&nbsp;|&nbsp;</span>
-        	<span>&copy; Discover Ipswich | Website design by Clemenger BBDO Brisbane </span>
+        	<span>&copy; Discover Ipswich </span>
         	<span class="visible-md-inline-block visible-lg-inline-block">&nbsp;|&nbsp;</span>
             <div class="social-channels">
             	<strong>Stay up to Date:</strong>
